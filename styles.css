@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 95vw;
+	height: 95vw;
+}
+
+.box {
+	border: 1px solid gray;
+}
+
+.box:hover {
+	background: blue;
+}
+
+.clicked {
+	background: blue;
+}
