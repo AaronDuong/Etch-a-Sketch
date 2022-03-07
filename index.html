@@ -6,15 +6,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Etch-a-Sketch</title>
 		<link rel="stylesheet" href="styles.css" />
-		<script src="main.js" defer></script>
+		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<button>Start/Restart</button>
-		<div class="container"></div>
+		<div class="container-flex">
+			<h1 class="title">Etch-a-Sketch</h1>
+			<div class="main-content">
+				<div class="sketch-pad"></div>
+				<div class="options">
+					<form name="myForm">
+						<label for="color">black
+							<input type="radio" id="black" name="color" value="black" checked>
+						</label>
+						<label for="color">eraser
+							<input type="radio" id="white" name="color" value="white" checked>
+						</label>
+						<label for="color">random
+							<input type="radio" id="random" name="color" value="random" checked>
+						</label>
+						<p>Mode: <span id="coloringMode">Active</span> 
+							(click on sketch pad to toggle on/off)</p>
+					</form>
+					<button class="clear">Clear</button>
+				</div>
+				<div class="sliderContainer">
+					<label for="myRange"> Use Slider to pick size of pixels from 2-100
+					<input type="range" min="2" max="100" value="16" class="slider" id="myRange">
+					</label>
+				</div>
+			</div>
+		</div>
 
         <footer class="footer">
       <p>
-        Copyright ©
+        The Odin Project: Etch-a-Sketch &copy;
         <script>
           document.write(new Date().getFullYear())
         </script>
